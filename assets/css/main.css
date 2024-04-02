@@ -1965,3 +1965,10 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+
+.btn-homepage-discovery {
+  text-align: center;
+  border: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 10px 30px;
+}
