@@ -31,6 +31,14 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+
+  <!-- Your custom JavaScript file -->
+  <script defer type="module" src="create-account-with-email.js"></script>
+  <script defer type="module" src="login-with-google.js"></script>
+
   <!-- =======================================================
   * Template Name: Mentor
   * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
@@ -96,17 +104,18 @@
               <input type="text" class="form-control input-lg" name="username" placeholder="Full Name" required="required">
             </div>
         <div class="form-group">
-              <input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+              <input type="email" class="form-control input-lg" id = "email" name="email" placeholder="Email Address" required="required">
             </div>
         <div class="form-group">
-                <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+                <input type="password" class="form-control input-lg" id = "password" name="password" placeholder="Password" required="required">
             </div>
         <div class="form-group">
                 <input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm Password" required="required">
             </div>  
             <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
+                <button type="submit" id ="submit-button" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
             </div>
+            <script src="create-account-with-email.js"></script>
         </form>
         <div class="text-center">Already have an account? <a href="#">Login here</a></div>
     </div>
