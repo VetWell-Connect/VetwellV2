@@ -33,7 +33,7 @@ login.addEventListener("click", function () {
             const user = result.user;
 
             alert("Login Successful :)" + user.email);
-            window.location.href = "dashboard.html";
+            window.location.href = "home.html";
 
         }).catch((error) => {
             // Handle Errors here.
