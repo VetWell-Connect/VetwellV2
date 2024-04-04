@@ -76,45 +76,61 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <img src="assets/img/meditation2.jpg" alt="" data-aos="fade-in">
-
-      <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100" class="">Leave a Review</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are interested in how you found VetWell's services. Leave a review and help out your fellow veterans!</p>
-
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1 class="">Leave A Review<br></h1>
+              <p class="mb-0">We would love to hear feedback from our VVetWell Users!</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+        </div>
+      </nav>
+    </div><!-- /Hero Section -->
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
+    <!-- Review Section -->
     <section id="about" class="about section">
 
       <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/meditation1.jpg" class="img-fluid" alt="">
+          <div class="col-lg-8 ">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <!-- <div class="loading">Loading</div> -->
+                  <!-- <div class="error-message"></div> -->
+                  <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
+
+                  <button type="submit">Submit Review</button>
+                </div>
+
+              </div>
+            </form>
           </div>
-
-          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Overview</h3>
-            <p class="fst-italic">
-              Meditation is a centuries-old practice that encompasses a wide range of techniques aimed at cultivating mindfulness, inner peace, and self-awareness. Through various methods such as focused attention on the breath, body scans, or visualization, meditation encourages individuals to quiet the mind, observe their thoughts without judgment, and ultimately achieve a state of deep relaxation and mental clarity. Whether practiced for a few minutes a day or in longer sessions, meditation offers a powerful tool for managing the stresses of modern life and fostering a greater sense of inner balance and harmony.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span> Meditation has a direct correlation to increased memory and mental capacity due to the emphasis on focus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Alters the brain's perception to pain signals, resulting in a helpful therapy for chronic pain conditions. </span></li>
-              <li><i class="bi bi-check-circle"></i> <span>By cultivating a greater sense of emphathy, meditation can lead to more fulfilling personal relationships. </span></li>
-            </ul>
-
-            <!-- insert redirection link to Pierce's discover page-->
-            <a href="#" class="read-more"><span>Meditation Centers near you</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-
-        </div>
 
       </div>
 
