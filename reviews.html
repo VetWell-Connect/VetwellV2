@@ -94,30 +94,34 @@
     </div><!-- /Hero Section -->
 
     <!-- Review Section -->
-    <section id="about" class="about section">
+    <section id="reviews" class="reviews section">
 
       <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-lg-8 ">
+          <div class="reviews ">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="fname" class="form-control" placeholder="First Name" required="">
                 </div>
 
                 <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="lname" class="form-control" name="email" placeholder="Last Name" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="military rank" placeholder="Military Rank" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <input type="text" class="form-control" name="subject" placeholder="Title" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Your thoughts on our platform!" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -125,7 +129,13 @@
                   <!-- <div class="error-message"></div> -->
                   <!-- <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
-                  <button type="submit">Submit Review</button>
+                  <button type="submit" style="background: var(--accent-color);
+                  font-size: 20px;
+                  border-radius: 50px;
+                  color: var(--contrast-color);
+                  border: white;
+                  padding: 8px 25px;
+                  margin: 0 0 0 30px;">Submit Review</button>
                 </div>
 
               </div>
