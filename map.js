@@ -1,4 +1,3 @@
-//import { Loader } from "@googlemaps/js-api-loader"
 
 let map;
 let marker;
@@ -461,7 +460,5 @@ function calcRoute(destination){
         }
     })
 }
-
-
 
 window.initMap = initMap;
