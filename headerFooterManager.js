@@ -94,7 +94,7 @@ class SpecialFooter extends HTMLElement {
                     <p>2400 6th St NW</p>
                     <p> Washington, DC 20059</p>
                     <p class="mt-3"><strong>Phone:</strong> <span>+1 (202) 806-6100</span></p>
-                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    <p><strong>Email:</strong> <span>team@vetwellconnect.com</span></p>
                 </div>
                 <div class="social-links d-flex mt-4">
                     <a href=""><i class="bi bi-twitter"></i></a>
@@ -107,8 +107,8 @@ class SpecialFooter extends HTMLElement {
                 <div class="col-lg-2 col-md-3 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Terms of service</a></li>
                     <li><a href="#">Privacy policy</a></li>
@@ -116,14 +116,6 @@ class SpecialFooter extends HTMLElement {
                 </div>
 
                 <div class="col-lg-2 col-md-3 footer-links">
-                <h4>Our Services</h4>
-                <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Product Management</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Graphic Design</a></li>
-                </ul>
                 </div>
 
                 <div class="col-lg-4 col-md-12 footer-newsletter">
@@ -147,7 +139,7 @@ class SpecialFooter extends HTMLElement {
                 <!-- You can delete the links only if you've purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">VetWell Connect</a>
+                Designed by <a href="#">VetWell Connect</a>
             </div>
             </div>
 
