@@ -95,6 +95,10 @@
     padding: 1rem;
     font-size: medium;
   }
+  .separator {
+    border-top: 5px dashed #000; /* Adjust the color here */
+    margin: 10px 0;
+}
 
   #autocomplete{
     background-color: #fff;

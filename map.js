@@ -286,7 +286,13 @@ const createMarker = (place, placeType) => {
         detailsHTML += '<p><b>Author:</b> ' + review.author_name + '</p>' +
             '<p><b>Rating:</b> ' + review.rating + '</p>' +
             '<p><b>Review:</b> ' + review.text + '</p>';
-        }
+
+            // Add a dashed line as separator after each review
+                    // Add separator if it's not the last review
+            if (i < Math.min(place.reviews.length, 2) - 1) {
+              detailsHTML += '<div class="separator"></div>';
+            } 
+          }
     } else {
         detailsHTML += '<p>No reviews available</p>';
     }
