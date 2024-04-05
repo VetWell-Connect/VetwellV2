@@ -31,6 +31,9 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script defer type="module" src="login-with-email.js"></script>
+  <script defer type="module" src="login-with-google.js"></script>
+  <script defer type="module" src="login-with-twitter.js"></script>
   <!-- =======================================================
   * Template Name: Mentor
   * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
@@ -89,17 +92,17 @@
         <div class="social-btn text-center">
           <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
           <a href="#" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
-          <a href="#" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
+          <a href="#" class="btn btn-danger btn-lg" id ="google-login"><i class="fa fa-google"></i> Google</a>
         </div>
         <div class="or-seperator"><b>or</b></div>
         <div class="form-group">
-              <input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+              <input type="email" id = "email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
             </div>
         <div class="form-group">
-                <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+                <input type="password" id = "password" class="form-control input-lg" name="password" placeholder="Password" required="required">
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Log In</button>
+                <button type="submit" id = "submit-button" class="btn btn-success btn-lg btn-block signup-btn">Log In</button>
             </div>
         </form>
         <div class="text-center">New to VetWell Connect? <a href="starter-page.html">Sign Up here</a></div>
