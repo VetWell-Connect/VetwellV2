@@ -31,6 +31,15 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+
+  <!-- Your custom JavaScript file -->
+  <script defer type="module" src="create-account-with-email.js"></script>
+  <script defer type="module" src="login-with-google.js"></script>
+  <script defer type="module" src="login-with-twitter.js"></script>
+
   <!-- =======================================================
   * Template Name: Mentor
   * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
@@ -87,25 +96,25 @@
         <h2>Create an Account</h2>
         <p class="hint-text">Sign up with your social media account or email address</p>
         <div class="social-btn text-center">
-          <a href="#" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
-          <a href="#" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
-          <a href="#" class="btn btn-danger btn-lg"><i class="fa fa-google"></i> Google</a>
+          <a href="https://www.facebook.com/?stype=lo&deoia=1&jlou=AfckARkNDxN5GIMzO9pOW5ezcNvFITv2ehSe6NY2Iethi5Xeyw9f1xqClHixCVNh11_iF63of4p32NSUNTs3zKLe1WGzg0aKQMTwQlCHtG62vg&smuh=58515&lh=Ac9xgLOVDeV1BX4A84A" class="btn btn-primary btn-lg"><i class="fa fa-facebook"></i> Facebook</a>
+          <a href="https://twitter.com/i/flow/login" class="btn btn-info btn-lg" id = "twitter-login"><i class="fa fa-twitter"></i> Twitter</a>
+          <a href="#" class="btn btn-danger btn-lg" id ="google-login"><i class="fa fa-google"></i> Google</a>
         </div>
         <div class="or-seperator"><b>or</b></div>
             <div class="form-group">
               <input type="text" class="form-control input-lg" name="username" placeholder="Full Name" required="required">
             </div>
         <div class="form-group">
-              <input type="email" class="form-control input-lg" name="email" placeholder="Email Address" required="required">
+              <input type="email" class="form-control input-lg" id = "email" name="email" placeholder="Email Address" required="required">
             </div>
         <div class="form-group">
-                <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
+                <input type="password" class="form-control input-lg" id = "password" name="password" placeholder="Password" required="required">
             </div>
         <div class="form-group">
                 <input type="password" class="form-control input-lg" name="confirm_password" placeholder="Confirm Password" required="required">
             </div>  
             <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
+                <button type="submit" id ="submit-button" class="btn btn-success btn-lg btn-block signup-btn">Sign Up</button>
             </div>
         </form>
         <div class="text-center">Already have an account? <a href="login.html">Login here</a></div>
