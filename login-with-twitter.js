@@ -4,7 +4,7 @@ import { getAuth, signInWithPopup, TwitterAuthProvider } from "https://www.gstat
     
     // Your web app's Firebase configuration
     const firebaseConfig = {
-        apiKey: "AIzaSyC2uncXK-a4JRnQdcZuwfgjzz0jET0BZh0",
+        apiKey: "AIzaSyATzfn275S-mLR_h8SUc6kfVv0n2-rCgZ4",
         authDomain: "vetwell-connect-707e1.firebaseapp.com",
         projectId: "vetwell-connect-707e1",
         storageBucket: "vetwell-connect-707e1.appspot.com",
@@ -12,19 +12,23 @@ import { getAuth, signInWithPopup, TwitterAuthProvider } from "https://www.gstat
         appId: "1:604264259574:web:23ed93cb7067783d7871d7",
         measurementId: "G-HJ484F0S0Q"
       };
+
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app);
+  const auth = getAuth();
 
   // Twitter login code
   const twitterProvider = new TwitterAuthProvider();
-
-  document.getElementById("twitter-login").addEventListener("click", function () {
-    auth.signInWithPopup(twitterProvider)
+  const login = document.getElementById("twitter-login")
+    alert(login)
+  login.addEventListener("click", function () {
+    signInWithPopup(auth, twitterProvider)
       .then((result) => {
         // The signed-in user info.
         const user = result.user;
         alert("Welcome " + user.displayName);
+        window.location.href = "home.html";
+
         console.log(user);
       })
       .catch((error) => {
