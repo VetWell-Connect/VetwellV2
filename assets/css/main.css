@@ -1595,7 +1595,8 @@ section,
 }
 
 .trainers .member .member-img {
-  margin: 0 80px;
+  width: 100%; /* Set width to 100% to fill the container */
+  height: 450px; /* Set a fixed height for all member images */
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -1608,8 +1609,9 @@ section,
 }
 
 .trainers .member .member-img img {
-  position: relative;
-  z-index: 1;
+  width: 100%; /* Ensure the image fills the container horizontally */
+  height: 100%; /* Ensure the image fills the container vertically */
+  object-fit: cover;
 }
 
 .trainers .member .member-img .social {
